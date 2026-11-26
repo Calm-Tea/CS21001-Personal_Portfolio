@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-custom mb-3">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1>My Projects</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="row m-3">
+                <h2>A few of my projects I enjoyed making</h2>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <h3 class="card-text m-3">Chess AI</h3>
+                        <p class="card-text m-3">As part of our AI module we had a chance to make both a search based AI
+                            and to train a ML model. I focused on the search based AI. I implemented a heuristc
+                            evaluation mostly based on piece positional values. A minimax algorithm to predict the best
+                            move by taking into account your oppenents next couple of moves. It was a really interesting
+                            subject that I'm hoping to pursue in my own time.
+                            For my part of this project I used python and made extensive use of the chess library. I had
+                            a problem at first where the AI would make essentially random moves, that was fixed using
+                            the positional value tables.
+                        </p>
+                        <a class="card-text m-3" href="https://github.com/Calm-Tea/CS21002-ChessAI">Link to GitHub
+                            repository</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <h3 class="card-text m-3">Project Nova</h3>
+                        <p class="card-text m-3">This was an assignment where we had to develop a Battleship like game.
+                            while not the most demanding or difficult project it was nice to make something interactive.
+                            For this project I used Java with Java Swing for the GUI.
+                            I encountered a lot of problems while implementing the GUI especially around threads, which
+                            I wasn't initially planning to do as it was not strictly neccessary. My code got a bit to
+                            complicated because of the addition of GUI but I fixed with a bit of moving code around the
+                            classes.
+                        </p>
+                        <a class="card-text m-3" href="https://github.com/Calm-Tea/CS11002-Assignment2">Link to GitHub
+                            repository</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <h3 class="card-text m-3">A calendar app</h3>
+                        <p class="card-text m-3">
+                            For our Unix module we, as a group, had to make a shell script for a terminal based
+                            calendar/to-do list system where a user could add different types of tasks with
+                            descriptions, dates, reccurences. I mainly focused on adding and displaying tasks. This was
+                            also my introduction to Regex. This was really fun to make and taught me a lot about
+                            teamwork as this was one of the first group projects we had.
+                        </p>
+                        <a class="card-text m-3" href="https://github.com/Calm-Tea/CS11005">Link to GitHub
+                            repository</a>
+                    </div>
+                </div>
+
+                <div class="col-12">
+    <div class="card mt-3">
+        <div class="card-body">
+            <h3 class="card-title">Skills</h3>
+            <p class="card-text">
+                For the AI project mentioned above we had to focus a lot on teamwork and delegation. I took the search based AI as I had some idea on how to implement it, while a second person took the ML section. the two of us then explained our code and helped the rest of our team write the reports for the project.
+            </p>
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-custom text-white text-center py-3 mt-4">
+        <p></p>
+    </footer>
+</body>
+
+</html>
